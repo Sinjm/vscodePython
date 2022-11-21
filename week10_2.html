@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            color: blue;
+            
+        }
+        .grey{
+            color: gray;
+        }
+
+    </style>
+    <script>
+    //-------------------------------------------------------------------------------------
+    //매개변수로 객체를 넘겨받아 그 객체의 속성명, 속성값을 차례대로 출력한다.
+    //class로 구분을 하여준다.
+    //
+    function showPropertyList (obj){
+        count=1;
+        for(let key in obj){
+            document.write(`<span class = "grey">${count}</span> [<b>${key}</b>]:<span class = "blue">${obj[key]}</span><br>`);
+            count++;
+    }        }
+    //----------------------------------------------------------
+    showPropertyList(window);
+    
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

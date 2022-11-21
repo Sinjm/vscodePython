@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+    <script>
+        //onload=on이하의 상황이 되었을때 이벤트 실행 - 문서 로딩이 끝나면 실행
+        window.onload = function(){ 
+                //innerHTML =() html안의 값을~으로 바꾸겠다.
+                //innerHTML = html코드로 해석 매우 중요 (요소만들고 부모자식 관계 만드는 과정 전부 생략 가능)
+                document.querySelector("h1").innerHTML = "자바스크립트";
+                //---------------------------------------------------------------------
+                //div 객체 하나를 가져와 style 속성 지정 테두리=1px solid grey로 설정/ 내부 여백 padding 10px 설정
+                //document.querySelector 반복 작업을 객체로 지정하여서 단순화 가능 let A =document.querySelector(a)~~~~
+                let d = document.querySelector("div")
+                d.style.border = "1px solid grey";
+                d.style.padding = "10px"
+                d.innerHTML = "<h1>동의과학대학교 인공지능 컴퓨터 정보과</h1><hr><h2>신재민</h2>"
+                //----------------------------------------------------------------------------------
+                //본인 이름을 파란색으로 설정해보기
+                document.querySelector("h2").style.color = "blue" 
+                
+            }
+    </script>
+
+
+
+</head>
+<body>
+    <h1>Javascript</h1>
+    <div>
+        
+    </div>
+</body>
+</html>
